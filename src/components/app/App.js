@@ -1,5 +1,6 @@
 import logo from "../../assets/images/logo.svg";
 import "./App.css";
+import { Button } from "antd";
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
         >
           Learn React
         </a>
+
+        <div className="button">
+          <Button type="primary">Ant Button</Button>
+        </div>
       </header>
     </div>
   );
