@@ -1,0 +1,61 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .header {
+    background-color: lightblue;
+    height: 60px;
+
+    .selected {
+      color: #333;
+      padding-bottom: 5px;
+      border-bottom: 1.5px solid #333;
+    }
+
+    .box {
+      width: 70%;
+      height: 100%;
+      padding: 0px 12px;
+      margin: 0px auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a:hover {
+        text-decoration: none;
+      }
+    }
+    .boxleft {
+      font-size: 20px;
+      color: rgb(51, 51, 51);
+      p {
+        margin: 0 10px;
+      }
+    }
+    .boxright {
+      display: inline-flex;
+      justify-content: flex-start;
+      p {
+        margin: 0 10px;
+        font-size: 14px;
+        color: rgb(102, 102, 102);
+      }
+    }
+    div {
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    text-align: center;
+    flex: 1;
+  }
+
+  .footer {
+    text-align: center;
+    justify-content: flex-end;
+    padding: 50px 0;
+    color: #555555;
+    background-color: #fafafa;
+  }
+}
