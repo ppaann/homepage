@@ -2,11 +2,11 @@ import React from "react";
 import styles from "./home.module.scss"
 import WorkList from "../../components/WorkList";
 import workData from "../works.json";
-
-export default () => {
+import avater from "../../assets/images/avater.jpg";
+const page = () => {
   return <div className = { styles.wrap }>
     <section className= {styles.brief }>
-      <img alt="avater" src={ require("../../assets/images/avater.jpg") }/>
+      <img alt="avater" src={avater}/>
       <h2> Name </h2>
 
       <ul>
@@ -31,3 +31,5 @@ export default () => {
   
   </div>;
 }
+
+export default page;

@@ -18,20 +18,20 @@ function App(props) {
     <div className={styles.App}>
       <header className={styles.header}>
         <div className={styles.box}>
-          <Link to="/">
+          <Link to="/portfolio">
             <div className={styles.boxleft}><p>Logo</p></div>
           </Link>
           <div className={styles.boxright}>
-            <Link to="/"><p className= { location.pathname === '/' ? styles.selected : null}>Home</p></Link>
-            <Link to="/works"><p className= { location.pathname === '/works' ? styles.selected : null}>Work</p></Link>
+            <Link to="/portfolio"><p className= { location.pathname === '/portfolio' ? styles.selected : null}>Home</p></Link>
+            <Link to="/portfolio/works"><p className= { location.pathname === '/portfolio/works' ? styles.selected : null}>Work</p></Link>
           </div>
         </div>
       </header>
 
       <section className={styles.content}>
-        <Route path="/" exact component={ HomePage }/>
-        <Route path="/works" exact component={ WorkPage }/>
-        <Route path="/works/:id" exact component={ WorkPageDetail }/>
+        <Route path="/portfolio" exact component={ HomePage }/>
+        <Route path="/portfolio/works" exact component={ WorkPage }/>
+        <Route path="/portfolio/works/:id" exact component={ WorkPageDetail }/>
       </section>
       <footer className={styles.footer}>
         <b>@ Shiny Day Rainy Day</b>
